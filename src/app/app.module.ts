@@ -13,7 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MovieFormComponent } from './movie-list/movie-form/movie-form.component';
 import { AuthService } from './services/auth.service';
 import { MoviesService } from './services/movies.service';
-import { GuardService } from './services/guard.service';
+import { AuthGuardService } from './services/auth-guard.service';
 
 
 
@@ -38,7 +38,7 @@ import { GuardService } from './services/guard.service';
   providers: [
     AuthService,
     MoviesService,
-    GuardService
+    AuthGuardService
   ],
   bootstrap: [AppComponent]
 })
