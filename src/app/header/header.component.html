@@ -7,11 +7,14 @@
             </li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-            <li routerLinkActive="active" class="nav-item">
+            <li routerLinkActive="active" class="nav-item" *ngIf="!isAuth">
                 <a routerLink="auth/signup" class="nav-link">Créer un compte</a>
             </li>
-            <li routerLinkActive="active" class="nav-item">
+            <li routerLinkActive="active" class="nav-item" *ngIf="!isAuth">
                 <a routerLink="auth/signin" class="nav-link">Connexion</a>
+            </li>
+            <li>
+                <button type="button" class="btn btn-danger" (click)="onSignOut()" style="cursor : pointer" *ngIf="isAuth">Déconnexion</button>
             </li>
         </ul>
     </div>
