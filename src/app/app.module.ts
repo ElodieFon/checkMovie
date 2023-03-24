@@ -11,6 +11,10 @@ import { SingleMovieComponent } from './movie-list/single-movie/single-movie.com
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MovieFormComponent } from './movie-list/movie-form/movie-form.component';
+import { AuthService } from './services/auth.service';
+import { MoviesService } from './services/movies.service';
+import { GuardService } from './services/guard.service';
+
 
 
 
@@ -31,7 +35,11 @@ import { MovieFormComponent } from './movie-list/movie-form/movie-form.component
     ReactiveFormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    AuthService,
+    MoviesService,
+    GuardService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
