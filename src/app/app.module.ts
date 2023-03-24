@@ -9,8 +9,6 @@ import { SigninComponent } from './auth/signin/signin.component';
 import { MovieListComponent } from './movie-list/movie-list.component';
 import { SingleMovieComponent } from './movie-list/single-movie/single-movie.component';
 import { HeaderComponent } from './header/header.component';
-import { AuthComponent } from './services/auth/auth.component';
-import { MoviesComponent } from './services/movies/movies.component';
 import { AppRoutingModule } from './app-routing.module';
 import { MovieFormComponent } from './movie-list/movie-form/movie-form.component';
 
@@ -24,10 +22,7 @@ import { MovieFormComponent } from './movie-list/movie-form/movie-form.component
     MovieListComponent,
     SingleMovieComponent,
     HeaderComponent,
-    AuthComponent,
-    MoviesComponent,
     MovieFormComponent,
-  
   ],
   imports: [
     BrowserModule,
